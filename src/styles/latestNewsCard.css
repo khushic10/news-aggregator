@@ -1,0 +1,46 @@
+.latest-card {
+	background-color: #ffffff;
+	border-left: 4px solid #9f496e;
+	border-radius: 8px;
+	padding: 8px 12px; /* reduced padding */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	display: flex;
+	flex-direction: column;
+	gap: 6px; /* reduced gap */
+	max-width: 280px;
+}
+
+.latest-card:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.latest-card h4 {
+	margin: 0;
+	font-size: 0.9rem; /* slightly smaller */
+	color: #2b262d;
+	line-height: 1.2; /* tighter line height */
+	font-weight: 600;
+}
+
+.latest-card a {
+	color: #3f51b5;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 0.8rem;
+	transition: color 0.2s ease;
+	align-self: flex-start;
+}
+
+.latest-card a:hover {
+	color: #1f1f1f;
+	text-decoration: underline;
+}
+
+.latest-image {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	margin-bottom: 4px; /* reduced margin */
+}

@@ -1,0 +1,72 @@
+/* Layout container */
+.home-page {
+	display: grid;
+	grid-template-columns: 70% 30%;
+	gap: 24px;
+	padding: 24px;
+	background-color: #f2ebe5;
+	color: #2b262d;
+	min-height: 100vh;
+	box-sizing: border-box;
+}
+
+/* Headlines section */
+.top-headlines {
+	background-color: #ffffff;
+	padding: 24px;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+	overflow: hidden;
+}
+
+.top-headlines h2 {
+	margin-bottom: 20px;
+	font-size: 1.8rem;
+	color: #9f496e;
+	border-bottom: 2px solid #9f496e;
+	padding-bottom: 8px;
+}
+
+/* News card grid */
+.news-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 20px;
+}
+
+/* Latest section */
+.latest-news {
+	background-color: #ffffff;
+	padding: 20px;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+	position: sticky;
+	top: 24px;
+	height: fit-content;
+}
+
+.latest-news h2 {
+	margin-bottom: 16px;
+	font-size: 1.5rem;
+	color: #647295;
+	border-bottom: 2px solid #647295;
+	padding-bottom: 6px;
+}
+
+/* Vertical list for latest news */
+.latest-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+/* Responsive: Stack layout */
+@media (max-width: 900px) {
+	.home-page {
+		grid-template-columns: 1fr;
+	}
+
+	.latest-news {
+		order: -1;
+	}
+}

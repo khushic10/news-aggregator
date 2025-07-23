@@ -1,0 +1,92 @@
+.category-page {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 24px;
+	background-color: #f2ebe5;
+	gap: 24px;
+}
+
+.news-section {
+	flex: 3;
+	min-width: 60%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.news-section h2 {
+	font-size: 28px;
+	color: #2b262d;
+	margin-bottom: 16px;
+	border-bottom: 2px solid #9f496e;
+	padding-bottom: 4px;
+}
+
+/* Sidebar with scroll */
+.sidebar {
+	flex: 1;
+	min-width: 250px;
+	max-height: 500px;
+	overflow-y: auto;
+	background-color: #fff;
+	border-radius: 12px;
+	padding: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+	border: 2px solid #ddd;
+	position: sticky;
+	top: 20px;
+	scrollbar-width: thin;
+	scrollbar-color: #9f496e #f0f0f0;
+}
+
+.sidebar::-webkit-scrollbar {
+	width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+	background-color: #9f496e;
+	border-radius: 6px;
+}
+
+.sidebar h3 {
+	color: #647295;
+	font-size: 20px;
+	margin-bottom: 12px;
+	text-align: center;
+	border-bottom: 2px solid #eee;
+	padding-bottom: 6px;
+}
+
+/* Category list styles */
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar li {
+	margin-bottom: 10px;
+}
+
+.sidebar a {
+	text-decoration: none;
+	display: block;
+	padding: 10px 16px;
+	border-radius: 8px;
+	color: #2b262d;
+	font-weight: 600;
+	background: linear-gradient(90deg, #f7f7f7, #eaeaea);
+	transition: background 0.3s ease, transform 0.2s ease, color 0.3s ease;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.sidebar a:hover {
+	background: linear-gradient(90deg, #9f496e, #7e3a58);
+	color: white;
+	transform: scale(1.03);
+}
+
+.sidebar a.active {
+	background-color: #647295;
+	color: red;
+}

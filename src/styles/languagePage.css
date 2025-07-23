@@ -1,0 +1,44 @@
+.language-page {
+	padding: 20px;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.language-selector {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 20px;
+	flex-wrap: wrap;
+}
+
+.lang-button {
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	background-color: #f9f9f9;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 0.9rem;
+	transition: background-color 0.2s, color 0.2s;
+}
+
+.lang-button:hover {
+	background-color: #e0e0e0;
+}
+
+.lang-button.active {
+	background-color: #3f51b5;
+	color: white;
+	border-color: #3f51b5;
+}
+
+h2 {
+	font-size: 1.2rem;
+	margin-bottom: 16px;
+	color: #333;
+}
+
+.news-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 12px;
+}
